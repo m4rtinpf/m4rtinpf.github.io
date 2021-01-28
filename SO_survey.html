@@ -1179,6 +1179,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><h2 id="Purpose">Purpose<a class="anchor-link" href="#Purpose">&#182;</a></h2><p>The purpose of this notebook is to make a portfolio project to showcase some basic data science skills.</p>
 <p>This is the second project of this kind that I make. The first one was a rehash of a tutorial project. This one was made without following a tutorial.</p>
+<p>This notebook is also available on <a href="https://github.com/m4rtinpf/SO_developer_survey">GitHub</a>.</p>
 <h2 id="Topic">Topic<a class="anchor-link" href="#Topic">&#182;</a></h2><p>We will analyse the software market for jobs, from the point of view of the developers.</p>
 <p>Some things we will explore are salaries, country of origin, size of companies, amount of hours worked per week, age, technologies worked with, and years of experience.</p>
 <h2 id="Basic-dataset">Basic dataset<a class="anchor-link" href="#Basic-dataset">&#182;</a></h2><p><a href="https://stackoverflow.com/">Stack Overflow</a> is a question and answer site focused on computer programming. From their homepage:</p>
@@ -1219,7 +1220,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!pip install -q googledrivedownloader</span>
@@ -2860,7 +2861,7 @@ memory usage: 30.0+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_column</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">sep</span><span class="p">,</span> <span class="n">na_value</span><span class="p">):</span>
@@ -10115,7 +10116,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace place-holders</span>
@@ -10146,7 +10147,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">so_survey_2020</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">so_survey_2020</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">so_survey_2020</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -10177,7 +10178,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -10275,7 +10276,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install -q world_bank_data --upgrade
@@ -10408,7 +10409,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_by_age_totals</span><span class="p">[</span><span class="s1">&#39;Total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">population_by_age_totals</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -10470,7 +10471,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">respondent_percentage_by_country_2020</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span>
@@ -10709,7 +10710,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -10766,7 +10767,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -10834,7 +10835,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_hist_plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">wrap_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -10858,7 +10859,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -10915,7 +10916,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
@@ -10988,7 +10989,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -11047,7 +11048,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -11117,7 +11118,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">employed_full_time</span> <span class="o">=</span> <span class="n">so_survey_2020</span><span class="p">[</span><span class="n">so_survey_2020</span><span class="p">[</span><span class="s1">&#39;Employment&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Employed full-time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span>
@@ -15880,7 +15881,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -15942,7 +15943,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">income_distribution_list</span> <span class="o">=</span> <span class="p">[</span>
@@ -16216,7 +16217,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
@@ -16247,7 +16248,7 @@ memory usage: 54.2+ MB
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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vn37yuv16s9//vNVe6cjwXOVu9SbVgPJwYMHtWHDBt1www2aOXOmJGno0KEqLCy0uDLzGhsblZmZqcbGRgUFBalfv35av359QN9gAKmurk6/+tWv5PF41NLSopiYGOXk5FhdVod4AykAwCgmyQEARhE8AACjCB4AgFEEDwDAKIIHAGAUwQMAMIrgAXqAyZMna9euXVe079GjRxUbGyuPxyNJeuCBB7R169buLA/oFIIHMOQPf/iDpkyZolGjRmncuHHKzc3VqVOnfNp3+/btbZ7OfSlxcXH68MMPW38eMmSI9uzZI7vdfkV1A92N4AEM2LRpk5555hktWrRIpaWlev3111VVVaW5c+equbnZ6vIAowgewM9Onz6tgoICLV26VHfddZdCQkI0dOhQPf/88zpy5IiKioqUnZ2t5557rnWfXbt26a677mr9+dujmIKCAmVmZurRRx9VbGysJk+erE8//VSStGjRIh09elQZGRmKjY3Viy++qK+++kojRozQ+fPnO6zv97//ve69916NGTNGaWlpqqqq8uOnARA8gN+VlZWpqalJ99xzT5v1YWFhmjBhwhU9SXnnzp2aPHmySktLFRcXp7y8PEnS6tWrNWTIEK1fv1579uxRenr6JY/zzjvvaMOGDVq7dq3++c9/6vbbb9evf/3rTtcDdAbBA/hZfX29IiIiFBzc/pm83/3ud6/odQa33367JkyYILvdrmnTpmn//v1XVNtrr72mefPmKSYmRsHBwcrIyFBFRQWjHvgVT6cG/CwiIkL19fU6f/58u/A5duyYIiIiOn3MAQMGtP752muvVVNTU4fHv5yjR4/qySeflMvlal3n9XpVU1Oj6OjoTtcF+ILgAfwsNjZWoaGh2rFjhyZNmtS6vqGhQSUlJXrooYe0f/9+nT17tnWb2+02UltUVJQyMjI0depUI/0BElNtgN/17dtXv/jFL7Ry5UqVlJSoublZX331lR566CFFRERoypQpcjqd+sc//qETJ07o2LFj+u1vf3vF/Q0YMEBHjhzxqe3MmTP1wgsv6ODBg5KkU6dO6S9/+csV9w34ghEPYEB6erocDodWrVqlL7/8UufOndPYsWP10ksvqU+fPpo2bZo+/PBDxcXFKTo6Wvfff782bdp0RX3NmzdPK1eu1OrVq/Xzn/9cCQkJF2179913q6GhQQ8//LCqqqrUt29f/c///I/uvffeKz1V4LJ4ERxggTfeeENr1qzRq6++qiFDhlhdDmAUIx7AAvfff7/sdrv27NlD8CDgMOIBABjFzQUAAKMIHgCAUQQPAMAoggcAYBTBAwAwiuABABj1/wDYTSfLagkp/QAAAABJRU5ErkJggg==
 "
 >
 </div>
@@ -16269,7 +16270,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top ten countries by amount of full-time-employed respondents that specified their income</span>
@@ -16331,7 +16332,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span>
@@ -16399,7 +16400,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span>
@@ -16466,7 +16467,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -16524,7 +16525,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -16581,7 +16582,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -16630,7 +16631,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -16687,7 +16688,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -16748,7 +16749,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -16817,7 +16818,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -16867,7 +16868,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -16929,7 +16930,7 @@ memory usage: 54.2+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -17026,7 +17027,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -17075,7 +17076,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[97]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -17136,7 +17137,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -17177,7 +17178,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -17249,7 +17250,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_boolean_plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">wrap_width</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">yticks_rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -17320,7 +17321,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -17377,7 +17378,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
@@ -17436,7 +17437,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
@@ -17637,7 +17638,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span>
@@ -17814,7 +17815,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_employed_full_time</span> <span class="o">=</span> <span class="n">employed_full_time</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span>
@@ -17875,7 +17876,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -17917,7 +17918,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">calculate_statistics</span><span class="p">(</span><span class="n">data_employed_full_time</span><span class="p">,</span> <span class="s1">&#39;DevType&#39;</span><span class="p">,</span> <span class="s1">&#39;YearlyWage&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span>
@@ -18047,7 +18048,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
@@ -18098,7 +18099,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -18166,7 +18167,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">hue_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -18260,7 +18261,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar_order</span> <span class="o">=</span> <span class="p">[</span>
@@ -18334,7 +18335,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -18405,7 +18406,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -18474,7 +18475,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conditional_proba</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -18613,7 +18614,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
@@ -18684,7 +18685,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[116]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">next_year_proba</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -18868,7 +18869,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[117]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">next_year_switch</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -19101,7 +19102,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -19152,7 +19153,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[119]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
@@ -19332,7 +19333,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">next_year_proba</span><span class="p">(</span><span class="n">so_survey_2020</span><span class="p">,</span> <span class="s1">&#39;Language&#39;</span><span class="p">))</span>
@@ -19540,7 +19541,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[121]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">next_year_switch</span><span class="p">(</span><span class="n">so_survey_2020</span><span class="p">,</span> <span class="s1">&#39;Language&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;probability of switch&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -19848,7 +19849,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[122]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corr1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -19972,7 +19973,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
@@ -20031,7 +20032,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span>
@@ -20084,7 +20085,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[125]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
@@ -20133,7 +20134,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
@@ -20182,7 +20183,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
@@ -20248,7 +20249,7 @@ Name: WorkWeekHrs, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[128]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corr1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
